@@ -1,3 +1,4 @@
+// @ts-nocheck
 import React, { ComponentProps, ReactNode } from 'react';
 import { Box, Headline, Text, Row } from 'elemental-react';
 import chroma from 'chroma-js';

@@ -2,14 +2,14 @@
   "name": "@elemental-design/style-guide",
   "version": "0.0.2",
   "description": "Generate a cross-platform style guide from a JSON theme based on our schema.",
-  "main": "lib/bundle.web.js",
+  "main": "lib/index.js",
   "sketch": "lib/bundle.sketch.js",
   "types": "lib/index.d.ts",
   "private": false,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "clean": "rm -rf lib/",
-    "build:js": "rollup -c",
+    "build:js": "tsc -p tsconfig.json",
     "build:types": "tsc -d true --emitDeclarationOnly --declarationDir lib",
     "build": "npm run clean && npm run build:js && npm run build:types"
   },
@@ -50,7 +50,7 @@
     "@types/react": "^16.9.23",
     "@types/styled-components": "^5.0.1",
     "@types/styled-system": "^5.1.9",
-    "elemental-react": "^0.1.1",
+    "elemental-react": "^0.3.6",
     "rollup": "^2.0.3",
     "rollup-plugin-babel": "^4.4.0",
     "typescript": "^3.8.3"

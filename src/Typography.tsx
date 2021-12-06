@@ -1,3 +1,4 @@
+// @ts-nocheck
 import React from 'react';
 import { Box, Text, Row } from 'elemental-react';
 // import { useTranslation } from 'react-i18next';

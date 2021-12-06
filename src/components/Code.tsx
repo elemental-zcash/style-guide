@@ -1,3 +1,4 @@
+// @ts-nocheck
 import React, { ReactNode } from 'react';
 import { Box, Text } from 'elemental-react';
 
