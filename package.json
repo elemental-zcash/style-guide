@@ -1,5 +1,5 @@
 {
-  "name": "@elemental-design/style-guide",
+  "name": "@elemental-zcash/style-guide",
   "version": "0.0.2",
   "description": "Generate a cross-platform style guide from a JSON theme based on our schema.",
   "main": "lib/index.js",
@@ -10,7 +10,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "clean": "rm -rf lib/",
     "build:js": "tsc -p tsconfig.json",
-    "build:types": "tsc -d true --emitDeclarationOnly --declarationDir lib",
+    "build:types": "tsc -d -p tsconfig.json",
     "build": "npm run clean && npm run build:js && npm run build:types"
   },
   "repository": {
@@ -53,7 +53,7 @@
     "elemental-react": "^0.3.6",
     "rollup": "^2.0.3",
     "rollup-plugin-babel": "^4.4.0",
-    "typescript": "^3.8.3"
+    "typescript": "^4.5.5"
   },
   "peerDependencies": {
     "react": "16.x"
